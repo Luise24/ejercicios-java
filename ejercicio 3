@@ -1,0 +1,41 @@
+class main {
+    public static void main (String[] args) {
+        Persona persona = new Persona();
+/// le asigne valores a cada variable y la imprimí en consola
+        persona.setNombre("Luis Acosta");
+        System.out.println("su nombre es: " + persona.getNombre());
+        persona.setEdad(31);
+        System.out.println("su edad es de: " + persona.GetEdad());
+        persona.setTelefono(465465465);
+        System.out.println("su número de tlf es: " + persona.getTelefono());
+    }
+}
+/// cree la clase persona
+
+class Persona 
+
+///cree la variable privadas "edad", "nombre" y "telefono y le cree a cada uno su set y get"
+
+{
+    private int edad;
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+    public int GetEdad() {
+    return this.edad;
+    }
+    private String nombre;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    public String getNombre() {
+    return this.nombre;
+    }
+    private int telefono;
+    public void setTelefono (int telefono) {
+        this.telefono = telefono;
+    }
+    public int getTelefono() {
+        return this.telefono;
+    }
+}
